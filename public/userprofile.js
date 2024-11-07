@@ -47,7 +47,7 @@ document.getElementById('photo').addEventListener('change', function(event) {
 
 document.getElementById('delete-photo').addEventListener('click', function() {
   document.getElementById('profile-photo').src = 'default-profile-photo.jpg';
-  document.getElementById('photo').value = ''; // Clear the file input
+  document.getElementById('photo').value = ''; // Clear the file inpu
 });
 
 
@@ -57,7 +57,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     const response = await fetch("/userdata", {
       method: "GET",
       headers: {
-        "Content-Type": "application/json",
+        "Content-Type": "application/json"
       }
     });
 

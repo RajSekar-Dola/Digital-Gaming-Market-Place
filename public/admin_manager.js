@@ -219,7 +219,6 @@ function openclosereg()
 });
 
 
-
 document.addEventListener('DOMContentLoaded', function () {
     const accordionItems = document.querySelectorAll('.accordion-item');
     accordionItems.forEach(item => {

@@ -9,12 +9,13 @@ const game_details = require("./models/gameschema");
 const register = require("./models/accountschema");
 const {connecttomongodb}=require( './models/connect')
 const Message = require("./models/messageschema");
+require('dotenv').config();
 
-connecttomongodb('mongodb://localhost:27017/user').then(() => {
+connecttomongodb(process.env.url).then(() => {
   console.log("DB CONNECTED");
 })
-.catch(() => {
-  console.log("Failed to Connect");
+.catch((e) => {
+  console.log(e);
 });
 
 // to add the games to the database uncomment below one  and comment above code and run only once. then undo the changes 
