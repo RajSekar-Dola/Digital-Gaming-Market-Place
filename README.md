@@ -18,7 +18,6 @@ The website uses MongoDB for the database, Node.js and Express for backend funct
 - [Features](#features)
 - [Technologies Used](#technologies-used)
 - [Credits](#credits)
-- [License](#license)
 
 ## Installation
 
